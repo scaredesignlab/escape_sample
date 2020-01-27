@@ -1,29 +1,43 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
-    - DebugUIBuilder
-    - HandedInputSelector
-    - LaserPointer
+    - CharacterCameraConstraint
+    - CharacterCapsule
+    - LocomotionController
+    - LocomotionTeleport
     - ONSPSettings
     - OVRTouchSample.Hand
     - OVRTouchSample.HandPose
-    - OculusSampleFramework.DistanceGrabbable
-    - OculusSampleFramework.DistanceGrabber
-    - OculusSampleFramework.DistanceGrabberSample
-    - OculusSampleFramework.GrabManager
-    - OculusSampleFramework.GrabbableCrosshair
+    - SimpleCapsuleWithStickMovement
+    - TeleportAimHandlerLaser
+    - TeleportAimHandlerParabolic
+    - TeleportAimVisualLaser
+    - TeleportDestination
+    - TeleportInputHandlerHMD
+    - TeleportInputHandlerTouch
+    - TeleportOrientationHandler360
+    - TeleportOrientationHandlerHMD
+    - TeleportOrientationHandlerThumbstick
+    - TeleportTargetHandlerNavMesh
+    - TeleportTargetHandlerNode
+    - TeleportTargetHandlerPhysical
+    - TeleportTransitionBlink
+    - TeleportTransitionInstant
+    - TeleportTransitionWarp
+    - anmtest
+    - hittest
     Oculus.VR.Editor.dll:
     - OVRConfig
     Oculus.VR.dll:
     - OVRCameraRig
     - OVRDebugInfo
+    - OVRGrabbable
+    - OVRGrabber
     - OVRHeadsetEmulator
     - OVRManager
     - OVRPlayerController
-    - OVRRaycaster
     - OVRSceneSampleController
     - OVRScreenFade
-    - UnityEngine.EventSystems.OVRInputModule
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
@@ -35,17 +49,14 @@ ScriptsOnlyBuild:
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
+    - UnityEngine.EventSystems.StandaloneInputModule
     - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
-    - UnityEngine.UI.HorizontalLayoutGroup
     - UnityEngine.UI.Image
-    - UnityEngine.UI.LayoutElement
-    - UnityEngine.UI.Slider
     - UnityEngine.UI.Text
-    - UnityEngine.UI.Toggle
   sceneClasses:
-    Assets/Oculus/SampleFramework/Usage/DistanceGrab.unity:
+    Assets/Oculus/SampleFramework/Usage/CustomControllers.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -66,13 +77,15 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 54
       Script: {instanceID: 0}
-    - Class: 64
-      Script: {instanceID: 0}
     - Class: 65
       Script: {instanceID: 0}
     - Class: 74
       Script: {instanceID: 0}
     - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
       Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
@@ -99,57 +112,79 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10126}
     - Class: 114
-      Script: {instanceID: 10152}
+      Script: {instanceID: 10180}
     - Class: 114
       Script: {instanceID: 10264}
     - Class: 114
-      Script: {instanceID: 10304}
+      Script: {instanceID: 10346}
     - Class: 114
-      Script: {instanceID: 10560}
+      Script: {instanceID: 10378}
+    - Class: 114
+      Script: {instanceID: 10418}
     - Class: 114
       Script: {instanceID: 10592}
     - Class: 114
       Script: {instanceID: 10692}
     - Class: 114
-      Script: {instanceID: 10710}
+      Script: {instanceID: 10700}
     - Class: 114
       Script: {instanceID: 10814}
+    - Class: 114
+      Script: {instanceID: 10834}
+    - Class: 114
+      Script: {instanceID: 10852}
+    - Class: 114
+      Script: {instanceID: 10930}
     - Class: 114
       Script: {instanceID: 10956}
     - Class: 114
       Script: {instanceID: 11062}
     - Class: 114
-      Script: {instanceID: 11066}
-    - Class: 114
       Script: {instanceID: 11070}
     - Class: 114
-      Script: {instanceID: 11158}
+      Script: {instanceID: 11130}
     - Class: 114
       Script: {instanceID: 11216}
     - Class: 114
+      Script: {instanceID: 11218}
+    - Class: 114
+      Script: {instanceID: 11228}
+    - Class: 114
+      Script: {instanceID: 11238}
+    - Class: 114
+      Script: {instanceID: 11278}
+    - Class: 114
       Script: {instanceID: 11282}
     - Class: 114
-      Script: {instanceID: 11406}
+      Script: {instanceID: 11300}
     - Class: 114
-      Script: {instanceID: 11586}
+      Script: {instanceID: 11400}
+    - Class: 114
+      Script: {instanceID: 11534}
     - Class: 114
       Script: {instanceID: 11616}
     - Class: 114
-      Script: {instanceID: 11746}
+      Script: {instanceID: 11718}
     - Class: 114
       Script: {instanceID: 11932}
     - Class: 114
       Script: {instanceID: 11978}
     - Class: 114
-      Script: {instanceID: 12056}
+      Script: {instanceID: 12044}
     - Class: 114
-      Script: {instanceID: 12330}
+      Script: {instanceID: 12074}
     - Class: 114
-      Script: {instanceID: 12470}
+      Script: {instanceID: 12176}
     - Class: 114
-      Script: {instanceID: 12498}
+      Script: {instanceID: 12322}
     - Class: 114
-      Script: {instanceID: 12500}
+      Script: {instanceID: 12376}
+    - Class: 114
+      Script: {instanceID: 12450}
+    - Class: 114
+      Script: {instanceID: 12456}
+    - Class: 114
+      Script: {instanceID: 12524}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -1765,5 +1800,5 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   platform: 13
   scenePathNames:
-  - Assets/Oculus/SampleFramework/Usage/DistanceGrab.unity
-  playerPath: /Users/mi/Desktop/sample15.apk
+  - Assets/Oculus/SampleFramework/Usage/CustomControllers.unity
+  playerPath: /Users/mi/Desktop/sample16.apk

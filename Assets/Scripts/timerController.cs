@@ -25,11 +25,11 @@ public class timerController : MonoBehaviour
     void Update()
     {
         timer -= Time.deltaTime;
-        if(anm.anmbool == true)
-        {
-            textMesh.text = string.Format("条件をクリアしました",timer);
-            return;
-        }
+        //if(anm.anmbool == true)
+        //{
+        //    textMesh.text = string.Format("条件をクリアしました",timer);
+        //    return;
+        //}
         if (timer < 0) timer = 0;
         textMesh.text = string.Format("{0:000.0}", timer);
         if (timer <= 0)

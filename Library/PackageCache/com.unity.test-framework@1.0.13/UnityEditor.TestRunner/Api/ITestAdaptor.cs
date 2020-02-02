@@ -1,27 +1,3 @@
-using System.Collections.Generic;
-using NUnit.Framework.Interfaces;
-
-namespace UnityEditor.TestTools.TestRunner.Api
-{
-    internal interface ITestAdaptor
-    {
-        string Id { get; }
-        string Name { get; }
-        string FullName { get; }
-        int TestCaseCount { get; }
-        bool HasChildren { get; }
-        bool IsSuite { get; }
-        IEnumerable<ITestAdaptor> Children { get; }
-        int TestCaseTimeout { get; }
-        ITypeInfo TypeInfo { get; }
-        IMethodInfo Method { get; }
-        string[] Categories { get; }
-        bool IsTestAssembly { get; }
-        RunState RunState { get; }
-        string Description { get; }
-        string SkipReason { get; }
-        string ParentId { get; }
-        string UniqueName { get; }
-        string ParentUniqueName { get; }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:75d1393f9392ea1a2a1efbfe2e461f09d042d3d16228f8fbd3b9cb7fbde7890d
+size 806

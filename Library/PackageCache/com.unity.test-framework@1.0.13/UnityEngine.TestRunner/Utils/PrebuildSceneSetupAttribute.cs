@@ -1,20 +1,3 @@
-using System;
-
-namespace UnityEngine.TestTools
-{
-    [AttributeUsage(AttributeTargets.Class | AttributeTargets.Method)]
-    public class PrebuildSetupAttribute : Attribute
-    {
-        public PrebuildSetupAttribute(Type targetClass)
-        {
-            TargetClass = targetClass;
-        }
-
-        public PrebuildSetupAttribute(string targetClassName)
-        {
-            TargetClass = AttributeHelper.GetTargetClassFromName(targetClassName, typeof(IPrebuildSetup));
-        }
-
-        internal Type TargetClass { get; private set; }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:28cca65ff216e710fb1064ff5f85e2f51ee5681cfd2ee02683ea3a9fce684cbd
+size 548

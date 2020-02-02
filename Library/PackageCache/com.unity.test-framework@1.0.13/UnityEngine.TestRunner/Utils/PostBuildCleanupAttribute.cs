@@ -1,20 +1,3 @@
-using System;
-
-namespace UnityEngine.TestTools
-{
-    [AttributeUsage(AttributeTargets.Class | AttributeTargets.Method)]
-    public class PostBuildCleanupAttribute : Attribute
-    {
-        public PostBuildCleanupAttribute(Type targetClass)
-        {
-            TargetClass = targetClass;
-        }
-
-        public PostBuildCleanupAttribute(string targetClassName)
-        {
-            TargetClass = AttributeHelper.GetTargetClassFromName(targetClassName, typeof(IPostBuildCleanup));
-        }
-
-        internal Type TargetClass { get; private set; }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:35454e0f40fb693b14ae5267969df8581b2f82f41b76b1089843f54f931bebab
+size 560

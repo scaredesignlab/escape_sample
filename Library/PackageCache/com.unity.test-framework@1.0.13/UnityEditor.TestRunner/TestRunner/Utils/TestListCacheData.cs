@@ -1,26 +1,3 @@
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.TestRunner.TestLaunchers;
-using UnityEngine.TestTools;
-
-namespace UnityEditor.TestTools.TestRunner
-{
-    internal class TestListCacheData : ScriptableSingleton<TestListCacheData>, ITestListCacheData
-    {
-        [SerializeField]
-        private List<TestPlatform> m_Platforms = new List<TestPlatform>();
-
-        [SerializeField]
-        private List<RemoteTestResultDataWithTestData> m_CachedData = new List<RemoteTestResultDataWithTestData>();
-
-        public List<TestPlatform> platforms
-        {
-            get { return m_Platforms; }
-        }
-
-        public List<RemoteTestResultDataWithTestData> cachedData
-        {
-            get { return m_CachedData; }
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:8a23a4074605ca9853be332140bf5493927d9fb2baa0e39899a925c26b17ad32
+size 758

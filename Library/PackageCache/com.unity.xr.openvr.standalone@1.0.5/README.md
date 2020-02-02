@@ -1,15 +1,3 @@
-# OpenVR (Desktop) Package
-
-The purpose of this package is to provide OpenVR XR Support. This package provides the necessary sdk libraries for users to build Applications that work with the SteamVR runtime.
-
-## Package structure
-
-```
-<root>
-	com.unity.openvr
-		README
-		Licenses
-		CHANGELOG
-		Documentation
-		package.json
-```
+version https://git-lfs.github.com/spec/v1
+oid sha256:20805b8ece026167363aed6df86cbe8d4c6acc2f335ed1ff6990097ed9c3a1ab
+size 326

@@ -1,34 +1,3 @@
-using System;
-using UnityEngine;
-using UnityEngine.TestTools.TestRunner.GUI;
-
-namespace UnityEditor.TestTools.TestRunner.Api
-{
-    [Serializable]
-    internal class Filter
-    {
-        [SerializeField]
-        public TestMode testMode;
-        [SerializeField]
-        public string[] testNames;
-        [SerializeField]
-        public string[] groupNames;
-        [SerializeField]
-        public string[] categoryNames;
-        [SerializeField]
-        public string[] assemblyNames;
-
-        public static Filter empty = new Filter();
-
-        internal TestRunnerFilter ToTestRunnerFilter()
-        {
-            return new TestRunnerFilter()
-            {
-                testNames = testNames,
-                categoryNames = categoryNames,
-                groupNames = groupNames,
-                assemblyNames = assemblyNames
-            };
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:acb9f7c002a7f0b247f5d67a72c4b75718383769af47d59b4ccebde6853c0f5e
+size 866

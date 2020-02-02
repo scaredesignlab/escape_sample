@@ -1,22 +1,3 @@
-using System;
-using UnityEditor.Networking.PlayerConnection;
-using UnityEngine;
-using UnityEngine.Networking.PlayerConnection;
-using UnityEngine.TestRunner.TestLaunchers;
-
-namespace UnityEditor.TestTools.TestRunner
-{
-    [Serializable]
-    internal class RemoteTestResultReciever
-    {
-        public void RunStarted(MessageEventArgs messageEventArgs)
-        {
-        }
-
-        public void RunFinished(MessageEventArgs messageEventArgs)
-        {
-            EditorConnection.instance.Send(PlayerConnectionMessageIds.runFinishedMessageId, null, messageEventArgs.playerId);
-            EditorConnection.instance.DisconnectAll();
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:b20e252adaeb9d709106f3e47f0344c03f41eea5f62456d9504af2330c0f75c8
+size 649

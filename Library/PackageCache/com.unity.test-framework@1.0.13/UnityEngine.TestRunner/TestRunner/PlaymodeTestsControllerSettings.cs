@@ -1,28 +1,3 @@
-using System;
-using UnityEngine.SceneManagement;
-using UnityEngine.TestTools.TestRunner.GUI;
-
-namespace UnityEngine.TestTools.TestRunner
-{
-    [Serializable]
-    internal class PlaymodeTestsControllerSettings
-    {
-        [SerializeField]
-        public TestRunnerFilter filter;
-        public bool sceneBased;
-        public string originalScene;
-        public string bootstrapScene;
-
-        public static PlaymodeTestsControllerSettings CreateRunnerSettings(TestRunnerFilter filter)
-        {
-            var settings = new PlaymodeTestsControllerSettings
-            {
-                filter = filter,
-                sceneBased = false,
-                originalScene = SceneManager.GetActiveScene().path,
-                bootstrapScene = null
-            };
-            return settings;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:fed6ff2ce1dac9582bba01bf0c3c4f730d64247d7ddb9dd947c85c7d1b61600c
+size 812
